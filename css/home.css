@@ -175,8 +175,29 @@ hr{
     .home-links a{
         border-radius: 0.2rem;
     }
+    .browse p{
+        font-size: 1.2rem;
+    }
+    .browse-btn{
+        width: 20%;
+    }
     .filter-by{
         display: flex;
         justify-content: space-between;
+    }
+    .search{
+        margin: 0 10%;
+    }
+    .filter-by select{
+        width: 100%;
+        padding: 10px 8rem 10px 5px;
+    }
+    .matches-btn{
+        width: 20%;
+    }
+    .matches-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }

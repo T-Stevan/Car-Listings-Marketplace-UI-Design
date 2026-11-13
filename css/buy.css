@@ -1,0 +1,227 @@
+:root {
+  --primary-color: #171b1f;
+  --secondary-color: #c5a46d;
+  --secondary-faded: #c5a56dc0; 
+  --secondary-light: #f3eada51;
+  --tertiary-color: #254b49;
+  --neutral-color: #f6f4ef;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-home .logo{
+    font-weight: 700;
+    padding: 5px;
+    border-radius: 0.2rem;
+}
+body{
+    font-family: DM Sans;
+    color: var(--primary-color);
+    background-color: #fff4e0;
+}
+.nav-home{
+    overflow: hidden;
+    background-color: var(--primary-color);
+    padding: 15px;
+    width: 100%;
+    position: relative;
+}
+.nav-home a{
+    color: var(--neutral-color);
+    text-decoration: none;
+}
+.hamburger-menu{
+    margin: 0 1rem 0 0;
+    width: 30px; 
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 0.2rem;
+}
+.home-links{
+    display: none;
+}
+.home-links a{
+    padding: 10px;
+    display: block;
+}
+a:hover{
+    background-color: var(--secondary-faded);
+    transition: 0.3s;
+    color: var(--neutral-color);
+}
+.container{
+    margin: 2rem;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 0.3rem;
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+}
+.container p{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+.search-container{
+    padding: 0 0 10px 0;
+}
+.search-filter{
+    padding-bottom: 0.5rem;
+}
+.search-filter label{
+    font-size: smaller;
+    font-weight: 700;
+}
+.select-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.select-wrapper select{
+    width: 100%;
+    padding: 0.5rem; 
+    font-size: 1rem;
+    border-radius: 0.2rem;
+    background-color: var(--secondary-light);
+}
+.submit button{
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 0.3rem;
+    color: var(--neutral-color);
+    font-weight: 700;
+    cursor: pointer;
+    margin: 1rem 0;
+}
+.submit button:hover{
+    background-color: var(--tertiary-color)
+}
+
+/*Verified Vehicles*/
+.verified-text{
+    margin: 2rem;
+}
+hr{
+    margin: 0.5rem 0;
+}
+
+.display{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+    margin: 2rem;
+}
+.car1, .car2, .car3, .car4{
+    margin-top: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 0.3rem;
+}
+.car-image{
+    border-radius: 0.3rem;
+}
+.car-image img{
+    width: 100%;
+    border-radius: 0.3rem;
+}
+.brand{
+    font-weight: 700;
+    font-size: 20px;
+}
+.specs{
+    padding: 0 1rem;
+}
+.make, .model, .year{
+    font-weight: 700;
+    font-size: 12px;
+    color: grey;
+}
+.company, .made, .version{
+    color:#171b1f;
+    font-weight: 800;
+}
+.spec1, .spec2, .spec3{
+    background-color: #9b9a9841;
+    text-align: center;
+    border-radius: 0.3rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+}
+
+.actions{
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.view{
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: none;
+    width: 60%;
+}
+.inquire{
+    color: var(--primary-color);
+    background-color: #f6f4ef;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: 1px solid grey;
+    width: 38%;
+}
+.car1{
+    border-radius: 0.3rem;
+    background-color: #ffffff;
+}
+
+
+@media screen and (min-width:768px){
+    .hamburger-menu{
+        display: none;
+    }
+    .nav-home{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .home-links{
+        display: flex !important;
+        justify-content: space-between;
+    }
+    .home-links a{
+        border-radius: 0.2rem;
+    }
+
+    .attachments .parts{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .filter-by{
+        display: flex;
+        justify-content: space-between;
+    }
+    .filter-by select{
+        width: 100%;
+        /* max-width: 200px; */
+        padding: 10px 8rem 10px 5px;
+        font-size: small;
+    }
+    .submit{
+        display: flex;
+        justify-content: center;
+    }
+    .submit button{
+        width: 20%;
+    }
+    .matches-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+    }
+}

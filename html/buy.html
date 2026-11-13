@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell</title>
+    <link rel="stylesheet" href="/css/buy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <main>
+        <nav class="nav-home">
+            <a href="javascript:void(0);" class="hamburger-menu" onclick="toggle()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="" class="logo">CarListings</a>
+            <div class="home-links" id="links">
+                <a href="">Buy</a>
+                <a href="">Sell</a>
+                <a href="">Contact</a>
+                <a href="">Logout</a>
+            </div>
+        </nav>
+
+        <div class="container">
+            <h1>Buy Your Next Ride</h1>
+            <p>Discover luxury and comfort tailored just for you.</p>
+            <section class="car-details">
+                <div class="filter-by">
+                    <div class="search-filter">
+                        <label for="Make">MAKE</label>
+                        <div class="select-wrapper">
+                            <select name="" id="make">
+                                <option value="">All Makes</option>
+                            </select>
+                        </div>
+                    </div>
+                
+                    <div class="search-filter">
+                        <label for="Model">MODEL</label>
+                        <div class="select-wrapper">
+                            <select name="" id="make">
+                                <option value="">All Models</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="search-filter">
+                        <label for="Year">YEAR</label>
+                        <div class="select-wrapper">
+                            <select name="" id="make">
+                                <option value="">All Years</option>
+                            </select>
+                        </div>
+                    </div> 
+
+                </div>    
+                <div class="submit">
+                    <button>Search Inventory</button>
+                </div>
+            </section>
+        </div>
+
+        <div class="verified-text">
+            <h2>Verified Vehicles</h2>
+            <p>Inspected and cerified auto-mobiles.</p>
+            <hr>
+        </div>
+
+        <!--Car Display Grid-->
+        <section class="display">
+            <!-- Car 1 -->
+            <div class="car1">
+                <div class="car-image">
+                    <img src="/images/ford.png" alt="Ford Ranger">
+                </div>
+                <div class="specs">
+                    <p class="brand">2022 Ford Ranger</p>
+                    <div class="spec1">
+                        <p class="make">MAKE</p>
+                        <p class="company">Ford</p>
+                    </div>
+                    <div class="spec2">
+                        <p class="model">MODEL</p>
+                        <p class="version">Ranger</p>
+                    </div>
+                    <div class="spec3">
+                        <p class="year">YEAR</p>
+                        <p class="made">2022</p>
+                    </div>
+                </div>
+                <div class="actions">
+                    <button class="view">View Details</button>
+                    <button class="inquire">Inquire</button>
+                </div>
+            </div>
+            
+            <!-- Car 2 -->
+            <div class="car2">
+                <div class="car-image">
+                    <img src="/images/range-rover.png" alt="Range Rover">
+                </div>
+                <div class="specs">
+                    <p class="brand">2023 Range Rover SV</p>
+                    <div class="spec1">
+                        <p class="make">MAKE</p>
+                        <p class="company">Land Rover</p>
+                    </div>
+                    <div class="spec2">
+                        <p class="model">MODEL</p>
+                        <p class="version">Range Rover SV</p>
+                    </div>
+                    <div class="spec3">
+                        <p class="year">YEAR</p>
+                        <p class="made">2023</p>
+                    </div>
+                </div>
+                <div class="actions">
+                    <button class="view">View Details</button>
+                    <button class="inquire">Inquire</button>
+                </div>
+            </div>
+
+            <!-- Car 3 -->
+            <div class="car3">
+                <div class="car-image">
+                    <img src="/images/civic.png" alt="Honda Civic">
+                </div>
+                <div class="specs">
+                    <p class="brand">2022 Honda Civic</p>
+                    <div class="spec1">
+                        <p class="make">MAKE</p>
+                        <p class="company">Honda</p>
+                    </div>
+                    <div class="spec2">
+                        <p class="model">MODEL</p>
+                        <p class="version">Honda Civic(sedan)</p>
+                    </div>
+                    <div class="spec3">
+                        <p class="year">YEAR</p>
+                        <p class="made">2022</p>
+                    </div>
+                </div>
+                <div class="actions">
+                    <button class="view">View Details</button>
+                    <button class="inquire">Inquire</button>
+                </div>
+            </div>
+
+            <!-- Car 4 -->
+            <div class="car4">
+                <div class="car-image">
+                    <img src="/images/benz.png" alt="Mercedes Benz">
+                </div>
+                <div class="specs">
+                    <p class="brand">2026 Mercedes Benz S-Class</p>
+                    <div class="spec1">
+                        <p class="make">MAKE</p>
+                        <p class="company">Mercedes-Benz</p>
+                    </div>
+                    <div class="spec2">
+                        <p class="model">MODEL</p>
+                        <p class="version">Mercedes Benz S-Class</p>
+                    </div>
+                    <div class="spec3">
+                        <p class="year">YEAR</p>
+                        <p class="made">2026</p>
+                    </div>
+                </div>
+                <div class="actions">
+                    <button class="view">View Details</button>
+                    <button class="inquire">Inquire</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        function toggle() {
+        let x = document.getElementById("links");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+        }
+    </script>
+</body>
+</html>

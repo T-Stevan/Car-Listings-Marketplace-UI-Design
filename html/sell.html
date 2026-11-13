@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell</title>
+    <link rel="stylesheet" href="/css/sell.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <main>
+        <nav class="nav-home">
+            <a href="javascript:void(0);" class="hamburger-menu" onclick="toggle()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="" class="logo">CarListings</a>
+            <div class="home-links" id="links">
+                <a href="">Buy</a>
+                <a href="">Sell</a>
+                <a href="">Contact</a>
+                <a href="">Register</a>
+                <a href="">Login</a>
+            </div>
+        </nav>
+
+        <div class="container">
+            <h1>Need To Sell Your Vehicle?</h1>
+            <section class="attachments">
+                <p class="upload">UPLOAD IMAGES</p>
+                <div class="parts">
+                    <div class="front">
+                        <i class="fa fa-upload"></i>
+                        <p>FRONT</p>
+                    </div>
+                    <div class="rear">
+                        <i class="fa fa-upload"></i>
+                        <p>REAR</p>
+                    </div>
+                    <div class="left-side">
+                        <i class="fa fa-upload"></i>
+                    <p>LEFT-SIDE</p>
+                    </div>
+                    <div class="right-side">
+                        <i class="fa fa-upload"></i>
+                        <p>RIGHT-SIDE</p>
+                    </div>
+                    <div class="engine">
+                        <i class="fa fa-upload"></i>
+                        <p>ENGINE</p>
+                    </div>
+                    <div class="boot">
+                        <i class="fa fa-upload"></i>
+                        <p>BOOT</p>
+                    </div>
+                </div>
+            </section>
+            <section class="car-details">
+                <p>VEHICLE DETAILS</p>
+                <div class="filter-by">
+                    <div class="search-filter">
+                        <label for="Make">MAKE</label>
+                        <div class="select-wrapper">
+                            <select name="" id="make">
+                                <option value="">Select Make</option>
+                            </select>
+                        </div>
+                    </div>
+                
+                    <div class="search-filter">
+                        <label for="Model">MODEL</label>
+                        <div class="select-wrapper">
+                            <select name="" id="make">
+                                <option value="">eg. 3 Series/Corolla</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="search-filter">
+                        <label for="Year">YEAR</label>
+                        <div class="select-wrapper">
+                            <select name="" id="make">
+                                <option value="">Select Year</option>
+                            </select>
+                        </div>
+                    </div> 
+                </div>    
+                <div class="submit">
+                    <button>SUBMIT</button>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script>
+        function toggle() {
+        let x = document.getElementById("links");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+        }
+    </script>
+</body>
+</html>

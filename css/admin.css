@@ -1,0 +1,163 @@
+:root {
+  --primary-color: #171b1f;
+  --secondary-color: #c5a46d;
+  --secondary-faded: #c5a56dc0; 
+  --secondary-light: #f3eada51;
+  --tertiary-color: #254b49;
+  --neutral-color: #f6f4ef;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+    font-family: DM Sans;
+    color: var(--primary-color);
+    background-color: #fff4e0;
+}
+.home-links{
+    display: none;
+}
+.home-links a{
+    padding: 10px;
+    display: block;
+}
+a:hover{
+    background-color: var(--secondary-faded);
+    transition: 0.3s;
+    color: var(--neutral-color);
+}
+.container{
+    margin: 2rem;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 0.3rem;
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+}
+.container p{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+hr{
+    margin: 0.5rem 0;
+}
+.nav-home .logo{
+    font-weight: 700;
+    padding: 5px;
+    border-radius: 0.2rem;
+}
+.nav-home{
+    overflow: hidden;
+    background-color: var(--primary-color);
+    padding: 15px;
+    width: 100%;
+    position: relative;
+}
+.nav-home a{
+    color: var(--neutral-color);
+    text-decoration: none;
+}
+
+.total-users, .total-vehicles, .approved-cars{
+    background-color: #faf4ea;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    width: 100%;
+}
+.sub-heading{
+    font-weight: 700;
+    color: #171b1fb7;
+}
+.number{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.approved-cars .sub-heading, .approved-cars .number{
+    color: #266d49;
+}
+.pending-approvals{
+    margin: 2rem;
+}
+.details{
+    margin: 0.5rem 1rem;
+    padding-bottom: 1rem;
+}
+.more{
+    color: grey;
+    font-weight: 600;
+}
+.options{
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.options button{
+    width: 30%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px;
+    font-weight: 600;
+}
+.decline:hover{
+    background-color: red;
+    color: #ffffff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.approve{
+    background-color: #266d49;
+    color: #ffffff;
+}
+.approve:hover{
+    color: #ffffff;
+    background-color: #084214;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.car1, .car2{
+    margin: 1.5rem 0;
+    background-color: #ffffff;
+    border-radius: 0.3rem;
+}
+.car-image{
+    border-radius: 0.3rem;
+}
+.car-image img{
+    width: 100%;
+    border-radius: 0.3rem;
+}
+.brand{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+@media screen and (min-width:768px){
+    .nav-home{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .home-links a{
+        border-radius: 0.2rem;
+    }
+    .analytics{
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    .approvals{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 1rem;
+    }
+}

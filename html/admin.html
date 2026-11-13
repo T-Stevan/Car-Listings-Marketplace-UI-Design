@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="/css/admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <main>
+        <nav class="nav-home">
+            <a href="/html/admin.html">AdminPanel</a>
+            <a href="/html/home.html" class="logo">CarListings</a>
+            <div class="home-links" id="links">
+                <a href="">Logout</a>
+            </div>
+        </nav>
+
+        <div class="container">
+            <h1>DASHBOARD</h1>
+            <p>Real time marketplace sysytem analytics</p> <hr>
+            <section class="analytics">
+                <div class="total-users">
+                    <p class="sub-heading">TOTAL USERS</p>
+                    <p class="number">1,420</p>
+                    <p class="caption">Active buyers and verified sellers</p>
+                </div>    
+                 <div class="total-vehicles">
+                    <p class="sub-heading">TOTAL VEHICLES</p>
+                    <p class="number">120</p>
+                    <p class="caption">Inventory listed in marketplace</p>
+                </div>  
+                 <div class="approved-cars">
+                    <p class="sub-heading">APPROVED VEHICLES</p>
+                    <p class="number">98</p>
+                    <p class="caption">Verified and visible to public</p>
+                </div>  
+            </section>
+        </div>
+
+
+        <!--Car Display Grid-->
+        <section class="pending-approvals">
+            <h2>PENDING APPROVALS</h2>
+            <div class="approvals">
+                <!-- Car 1 -->
+                <div class="car1">
+                    <div class="car-image">
+                        <img src="/images/ford.png" alt="Ford Ranger">
+                    </div>
+                    <div class="details">
+                        <p class="brand">2022 Ford Ranger</p>
+                        <div class="more">
+                            
+                            <p class="seller">Seller: Marcus Inio</p>
+                            <p class="location">Location: Kisumu</p>
+                            <p class="time">Time:Thursday at 5:20am</p>
+                        </div>
+                        <div class="options">
+                            <button class="decline">Decline</button>
+                            <button class="approve">Approve</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Car 2 -->
+                <div class="car2">
+                    <div class="car-image">
+                        <img src="/images/range-rover.png" alt="Range Rover">
+                    </div>
+                    <div class="details">
+                        <p class="brand">2023 Range Rover SV</p>
+                        <div class="more">
+                            <p class="seller">Seller: Mary Jane</p>
+                            <p class="location">Location: Mombasa</p>
+                            <p class="time">Time: Tuesday at 9:20pm</p>
+                        </div>
+                        <div class="options">
+                            <button class="decline">Decline</button>
+                            <button class="approve">Approve</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

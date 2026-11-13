@@ -110,11 +110,7 @@ h1{
 hr{
     margin: 0.5rem 0;
 }
-
 .display{
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 1rem;
     margin: 2rem;
 }
 .car1, .car2, .car3, .car4{
@@ -197,31 +193,11 @@ hr{
     .home-links a{
         border-radius: 0.2rem;
     }
+    .display{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 1rem;
+        margin: 2rem;
+    }
 
-    .attachments .parts{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .filter-by{
-        display: flex;
-        justify-content: space-between;
-    }
-    .filter-by select{
-        width: 100%;
-        /* max-width: 200px; */
-        padding: 10px 8rem 10px 5px;
-        font-size: small;
-    }
-    .submit{
-        display: flex;
-        justify-content: center;
-    }
-    .submit button{
-        width: 20%;
-    }
-    .matches-container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center; 
-    }
 }
